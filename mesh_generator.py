@@ -1,6 +1,8 @@
 #-*- coding:utf-8 -*-
 from math import pi, sin, cos
 
+import numpy as np
+
 
 def polar2сartesian(r, fi):
     """ Перевод из полярной системы координат в декартову"""
@@ -71,8 +73,8 @@ def GenLameMesh(config_geometry, config_mesh):
 
 
     return {
-        'nodes': nodes,
-        'elems': elems,
+        'nodes': np.array(nodes),
+        'elems': np.array(elems),
         'edges': edges,
     }
 

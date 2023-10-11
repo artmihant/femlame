@@ -5,7 +5,7 @@ from base64 import b64decode
 import numpy as np
 import pandas as pd
 
-from server.lib.element_types import ELEMENT_TYPES
+from element_types import ELEMENT_TYPES
 
 
 def tolist(x):
